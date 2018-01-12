@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5019C7B4CE2F9338A45B4F32 /* libPods-SVGSDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E74129793D3E35121A74616F /* libPods-SVGSDemo.a */; };
+		79B6BC95200857E20080736D /* YDGiftAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B6BC93200857E20080736D /* YDGiftAnimationManager.m */; };
+		79B6BC972008582A0080736D /* Ani.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79B6BC962008582A0080736D /* Ani.bundle */; };
+		79B6BC9F20085E930080736D /* YDGiftAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B6BC9D20085E930080736D /* YDGiftAnimationView.m */; };
+		79B6BCA3200860510080736D /* YDGiftInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B6BCA2200860510080736D /* YDGiftInfoModel.m */; };
 		79EFCBDE2004B9AD00D4F264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EFCBDD2004B9AD00D4F264 /* AppDelegate.m */; };
 		79EFCBE12004B9AD00D4F264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EFCBE02004B9AD00D4F264 /* ViewController.m */; };
 		79EFCBE42004B9AD00D4F264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79EFCBE22004B9AD00D4F264 /* Main.storyboard */; };
@@ -20,6 +24,14 @@
 /* Begin PBXFileReference section */
 		60B91849B18F366833EE0BE0 /* Pods-SVGSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVGSDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SVGSDemo/Pods-SVGSDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6474D6CA4BF60B6884575E0B /* Pods-SVGSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVGSDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SVGSDemo/Pods-SVGSDemo.release.xcconfig"; sourceTree = "<group>"; };
+		79B6BC92200857E20080736D /* YDGiftAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDGiftAnimationManager.h; sourceTree = "<group>"; };
+		79B6BC93200857E20080736D /* YDGiftAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDGiftAnimationManager.m; sourceTree = "<group>"; };
+		79B6BC962008582A0080736D /* Ani.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Ani.bundle; sourceTree = "<group>"; };
+		79B6BC9D20085E930080736D /* YDGiftAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDGiftAnimationView.m; sourceTree = "<group>"; };
+		79B6BC9E20085E930080736D /* YDGiftAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDGiftAnimationView.h; sourceTree = "<group>"; };
+		79B6BCA020085EB10080736D /* YDGiftHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDGiftHeader.h; sourceTree = "<group>"; };
+		79B6BCA1200860510080736D /* YDGiftInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDGiftInfoModel.h; sourceTree = "<group>"; };
+		79B6BCA2200860510080736D /* YDGiftInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDGiftInfoModel.m; sourceTree = "<group>"; };
 		79EFCBD92004B9AD00D4F264 /* SVGSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVGSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EFCBDC2004B9AD00D4F264 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		79EFCBDD2004B9AD00D4F264 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +75,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		79B6BC8E200857E20080736D /* GiftAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				79B6BCA020085EB10080736D /* YDGiftHeader.h */,
+				79B6BCA1200860510080736D /* YDGiftInfoModel.h */,
+				79B6BCA2200860510080736D /* YDGiftInfoModel.m */,
+				79B6BC9E20085E930080736D /* YDGiftAnimationView.h */,
+				79B6BC9D20085E930080736D /* YDGiftAnimationView.m */,
+				79B6BC92200857E20080736D /* YDGiftAnimationManager.h */,
+				79B6BC93200857E20080736D /* YDGiftAnimationManager.m */,
+				79B6BC962008582A0080736D /* Ani.bundle */,
+			);
+			path = GiftAnimation;
+			sourceTree = "<group>";
+		};
 		79EFCBD02004B9AD00D4F264 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +111,7 @@
 		79EFCBDB2004B9AD00D4F264 /* SVGSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				79B6BC8E200857E20080736D /* GiftAnimation */,
 				79EFCBF22004BEBD00D4F264 /* kingset.svga */,
 				79EFCBDC2004B9AD00D4F264 /* AppDelegate.h */,
 				79EFCBDD2004B9AD00D4F264 /* AppDelegate.m */,
@@ -159,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79B6BC972008582A0080736D /* Ani.bundle in Resources */,
 				79EFCBF32004BEBD00D4F264 /* kingset.svga in Resources */,
 				79EFCBE92004B9AD00D4F264 /* LaunchScreen.storyboard in Resources */,
 				79EFCBE62004B9AD00D4F264 /* Assets.xcassets in Resources */,
@@ -223,6 +252,9 @@
 			files = (
 				79EFCBE12004B9AD00D4F264 /* ViewController.m in Sources */,
 				79EFCBEC2004B9AD00D4F264 /* main.m in Sources */,
+				79B6BCA3200860510080736D /* YDGiftInfoModel.m in Sources */,
+				79B6BC9F20085E930080736D /* YDGiftAnimationView.m in Sources */,
+				79B6BC95200857E20080736D /* YDGiftAnimationManager.m in Sources */,
 				79EFCBDE2004B9AD00D4F264 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

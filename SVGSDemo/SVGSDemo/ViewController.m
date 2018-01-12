@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <SVGA.h>
+#import "YDGiftHeader.h"
 
 @interface ViewController ()<SVGAPlayerDelegate>
 @property (nonatomic, strong) SVGAPlayer *aPlayer;
@@ -38,8 +39,20 @@ static SVGAParser *parser;
     [super viewWillLayoutSubviews];
     self.aPlayer.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
 }
+
+// 帧动画
 - (IBAction)onChange:(id)sender {
     
+    YDGiftInfoModel *model = [[YDGiftInfoModel alloc]initWithImageName:@"bizui" count:20];
+    [[YDGiftAnimationManager sharedManager] showInSuperView:self.view giftInfo:model];
+    
+    
+}
+
+
+// SVGA动画
+//- (IBAction)onChange:(id)sender {
+
     // 加载URL
 //    NSArray *items = @[
 //                       @"https://github.com/yyued/SVGA-Samples/blob/master/EmptyState.svga?raw=true",
@@ -64,15 +77,15 @@ static SVGAParser *parser;
 //         } failureBlock:nil];
 
     
-    // 加载本地路径
-    [parser parseWithNamed:@"kingset" inBundle:[NSBundle mainBundle] completionBlock:^(SVGAVideoEntity * _Nonnull videoItem) {
-        if (videoItem != nil) {
-            self.aPlayer.videoItem = videoItem;
-            [self.aPlayer startAnimation];
-        }
-
-    } failureBlock:nil];
-}
+//    // 加载本地路径
+//    [parser parseWithNamed:@"kingset" inBundle:[NSBundle mainBundle] completionBlock:^(SVGAVideoEntity * _Nonnull videoItem) {
+//        if (videoItem != nil) {
+//            self.aPlayer.videoItem = videoItem;
+//            [self.aPlayer startAnimation];
+//        }
+//
+//    } failureBlock:nil];
+//}
 
 
 - (SVGAPlayer *)aPlayer {
